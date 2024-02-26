@@ -1,5 +1,6 @@
 <template lang="">
-<div class="container mt-5">
+    <h1 class="text-center fw-semibold mt-2">My Projects</h1>
+<div class="container mt-3">
     <div class="row">
         <div class="col-3" v-for="project in projects">
             <div class="wrapper card d-flex flex-wrap mb-5" style="width: 18rem;">
@@ -49,7 +50,11 @@ export default {
 
 <style>
 
-
+body{
+    background: rgb(58,74,180);
+    background: linear-gradient(90deg, rgba(58,74,180,1) 0%, rgba(29,126,253,1) 36%, rgba(195,108,255,1) 77%);
+    overflow-y: hidden;
+}
 
 .wrapper{
     height: 300px;
