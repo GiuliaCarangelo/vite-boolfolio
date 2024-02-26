@@ -3,15 +3,15 @@ import ProjectList from './pages/ProjectList.vue';
 import CardItem from './components/CardItem.vue';
 
   export default{
-    components: { CardItem, ProjectList }
+    components: {ProjectList }
 }
 </script>
 
 <template>
   <ProjectList/>
-  
 </template>
 
-<style lang="css">
-
+<style lang="scss">
+@use '../src/style/general.scss'
 </style>
+
