@@ -1,3 +1,13 @@
+<template lang="">
+    <div>
+        <ul>
+            <li v-for="project in projects">
+            {{ project.title }}
+            </li>
+        </ul>
+    </div>
+</template>
+
 <script>
 import axios from 'axios';
 
@@ -14,12 +24,16 @@ export default {
                 params: {
                 }
             })
+
             .then((response) => {
                 console.log(response.data.results.data);
                 this.projects = response.data.results.data;
 
             })
         }
+    },
+    created(){
+        this.getProjects();
     }
 }
 </script>
